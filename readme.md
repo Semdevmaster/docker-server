@@ -23,3 +23,9 @@ make install-modx
 ```
 make mysql-backup
 ```
+
+## Сгенерировать SSL сертификаты для проекта
+Находясь в терминале, в папке server/nginx/ssl
+```
+mkcert site.loc www.site.loc localhost 127.0.0.1 ::1 192.168.1.6
+```

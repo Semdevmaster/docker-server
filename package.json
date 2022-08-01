@@ -4,10 +4,6 @@
     "stop devserver": "docker compose --profile nginx-php-mysql-nodejs stop",
     "remove devserver": "docker compose --profile nginx-php-mysql-nodejs down",
     "recreate devserver": "docker compose --profile nginx-php-mysql-nodejs up -d --build",
-    "rebuild nginx image": "docker compose build --parallel --compress nginx",
-    "rebuild php image": "docker compose build --parallel --compress php",
-    "rebuild mysql image": "docker compose build --parallel --compress mysql",
-    "rebuild nodejs image": "docker compose build --parallel --compress nodejs",
     "remove old images": "docker rmi $(docker images -qa -f 'dangling=true')"
   }
 }
